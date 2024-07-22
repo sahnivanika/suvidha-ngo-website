@@ -1,74 +1,64 @@
 /* Home.css */
+/* Home.css */
 .home-container {
-    display: flex; /* Use Flexbox to arrange items */
-    align-items: center; /* Center items vertically */
     padding: 30px; /* Adjust padding as needed */
-  }
-  
-  .image-container {
-    flex: 1; /* Allow the image container to take up available space */
-    margin-right: 20px; /* Space between the image and text */
-  }
-  
-  .home-image {
-    width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: add rounded corners */
-  }
-  
-  .text-container {
-    flex: 2; /* Allow the text container to take up more space */
+    display: flex; /* Use Flexbox to arrange items */
+    flex-direction: column; /* Stack items vertically by default */
+    align-items: center; /* Center items horizontally */
   }
   
   .heading {
     font-size: 50px; /* Font size for h2 heading */
     font-weight: bold;
-    margin-bottom: 20px; /* Margin below the heading */
-    margin-left: 40; /* No extra margin on the left */
-    margin-top: 40x; 
-    margin-right: 15; /* No extra margin on the right */
-    color: #42A5F5; /* Medium Blue color for the heading text */
-    text-align: center;  
-}
+    margin-left: 40px; /* Corrected margin-left with unit */
+    margin-right: 15px; /* Corrected margin-right with unit */
+    margin-top: 40px; /* Corrected margin-top with unit */
+    margin-bottom: 20px; /* Bottom margin for spacing below the heading */
+    text-align: center; /* Center the text */
+    color: var(--blue-dark-color); /* Ensure this CSS variable is defined */
+  }
   
   .subheading {
-    .subheading {
-        font-size: 30px; /* Smaller font size for the subheading */
-        font-weight: normal; /* Normal weight for the subheading text */
-        margin-left: 0; /* No extra margin on the left */
-        margin-right: 0; /* No extra margin on the right */
-        margin-top: 0; /* No extra margin above the subheading */
-        margin-bottom: 20px; /* Margin below the subheading for spacing */
-        text-align: center; /* Align text to the left */
-        color: #1E88E5; /* Dark Blue color for the subheading text */
-      }
-    
+    font-size: 30px; /* Smaller font size for the subheading */
+    font-weight: normal; /* Normal weight for the subheading text */
+    margin-left: 0; /* No extra margin on the left */
+    margin-right: 0; /* No extra margin on the right */
+    margin-top: 0; /* No extra margin above the subheading */
+    margin-bottom: 20px; /* Margin below the subheading for spacing */
+    text-align: center; /* Center the text */
+    color: #1E88E5; /* Dark Blue color for the subheading text */
+  }
+  
+  .image-container {
+    width: 100%; /* Ensure the image container takes full width */
+    text-align: center; /* Center the image horizontally */
+    margin-top: 20px; /* Space between text and image */
+  }
+  
+  .home-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .home-container {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center; /* Center items horizontally */
-    }
-  
-    .image-container {
-      margin-right: 0; /* Remove margin on smaller screens */
-      margin-bottom: 20px; /* Add bottom margin for spacing */
-    }
-  
-    .home-image {
-      width: 80%; /* Adjust width for smaller screens */
-    }
-  
     .heading {
       font-size: 20px; /* Adjust font size for smaller screens */
-      margin-bottom: 10px; /* Margin below the heading */
+      margin-top: 15px; /* Adjust top margin for smaller screens */
+      margin-bottom: 15px; /* Adjust bottom margin for smaller screens */
     }
   
     .subheading {
       font-size: 16px; /* Adjust font size for smaller screens */
-      text-align: center; /* Center the text on smaller screens */
+    }
+  
+    .home-container {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .image-container {
+      margin-top: 10px; /* Adjust top margin for smaller screens */
     }
   }
   
