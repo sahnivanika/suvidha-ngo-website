@@ -1,1 +1,30 @@
 
+:root{
+    --blue--backgroud--color:#E3F2FD;
+    --blue--butto--color:#81D4FA;
+    --blue--medium--color:#42A5F5;
+    --blue--dark--color:#126ef9e9;
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  
+  body {
+    background: var(--blue--backgroud--color);
+    color: var(--blue--butto--color);
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  #root {
+    height: 100%;
+  }
