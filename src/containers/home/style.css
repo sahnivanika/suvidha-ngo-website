@@ -1,0 +1,35 @@
+/* Home.css */
+.home-container {
+    padding: 30px; /* Adjust padding as needed */
+  }
+  
+  .heading {
+    font-size: 50px; /* Font size for h2 heading */
+    font-weight: bold;
+    margin-left: 40; /* No extra margin on the left */
+    margin-right: 15; /* No extra margin on the right */
+    margin-top: 40x; /* Top margin for spacing above the heading */
+    margin-bottom: 20px; /* Bottom margin for spacing below the heading */
+    text-align: center; /* Align text to the left */
+    color: var(--blue--dark--color);  
+}
+
+.subheading {
+    font-size: 18px; /* Smaller font size for the subheading */
+    font-weight: normal; /* Normal weight for the subheading text */
+    margin-left: 0; /* No extra margin on the left */
+    margin-right: 0; /* No extra margin on the right */
+    margin-top: 0; /* No extra margin above the subheading */
+    margin-bottom: 20px; /* Margin below the subheading for spacing */
+    text-align: left; /* Align text to the left */
+    color: #1E88E5; /* Dark Blue color for the subheading text */
+  }
+
+@media (max-width: 768px) {
+    .heading {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      text-align: center; /* Center the text on smaller screens */
+      margin-top: 15px; /* Adjust top margin for smaller screens */
+      margin-bottom: 15px; /* Adjust bottom margin for smaller screens */
+    }
+  }

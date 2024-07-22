@@ -1,0 +1,43 @@
+/* Navbar.css */
+/* Navbar.css */
+.navbar {
+    background-color: #42A5F5; /* Medium Blue for the background */
+    padding: 20px 20px; /* Padding around the navbar */
+  }
+  
+  .navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox to arrange items horizontally */
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  .navbar-item {
+    margin: 0 20px; /* Margins on the left and right side of each item */
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: white; /* White text color */
+    font-weight: bold;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    padding: 10px 15px; /* Padding around the link for better click area */
+    border-radius: 5px; /* Rounded corners for the link */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .navbar-link:hover {
+    background-color: #1E88E5; /* Dark Blue for hover effect */
+    color: #FFFFFF; /* White text color on hover */
+  }
+  @media (max-width: 768px) {
+    .navbar-list {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .navbar-item {
+      margin: 10px 0; /* Adjust margins for vertical layout */
+    }
+  }
