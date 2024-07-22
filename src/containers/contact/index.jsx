@@ -3,7 +3,7 @@ const Contact =()=>
 {
     return(
         <div>
-            about page
+            co page
         </div>
     )
 }
