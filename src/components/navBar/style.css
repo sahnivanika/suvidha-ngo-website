@@ -2,7 +2,7 @@
 /* Navbar.css */
 .navbar {
     background-color: #42A5F5; /* Medium Blue for the background */
-    padding: 20px 20px; /* Padding around the navbar */
+    padding: 25px 25px; /* Padding around the navbar */
   }
   
   .navbar-list {
@@ -15,6 +15,7 @@
   
   .navbar-item {
     margin: 0 20px; /* Margins on the left and right side of each item */
+    margin-top: 0px;
   }
   
   .navbar-link {

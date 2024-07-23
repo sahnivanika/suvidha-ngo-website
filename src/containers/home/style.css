@@ -12,10 +12,10 @@
     font-weight: bold;
     margin-left: 40px; /* Corrected margin-left with unit */
     margin-right: 15px; /* Corrected margin-right with unit */
-    margin-top: 40px; /* Corrected margin-top with unit */
+    margin-top: 0px; /* Reduced margin-top to move closer to navbar */
     margin-bottom: 20px; /* Bottom margin for spacing below the heading */
     text-align: center; /* Center the text */
-    color: var(--blue-dark-color); /* Ensure this CSS variable is defined */
+    color: #1E88E5; /* Dark Blue color for the heading text */
   }
   
   .subheading {
@@ -26,26 +26,87 @@
     margin-top: 0; /* No extra margin above the subheading */
     margin-bottom: 20px; /* Margin below the subheading for spacing */
     text-align: center; /* Center the text */
-    color: #1E88E5; /* Dark Blue color for the subheading text */
+    color: #E57B1E; /* Dark Blue color for the subheading text */
   }
   
   .image-container {
-    width: 100%; /* Ensure the image container takes full width */
-    text-align: center; /* Center the image horizontally */
-    margin-top: 20px; /* Space between text and image */
+    width: 90%; /* Ensure the image container takes full width */
+    display: flex; /* Use Flexbox to arrange items */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-between; /* Space items evenly */
+    margin-top: 0px; /* Space between text and image */
   }
   
   .home-image {
-    max-width: 100%; /* Ensure image is responsive */
+    max-width: 40%; /* Adjust the width to ensure it fits on the screen */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: add rounded corners */
+    border-radius: 0px; /* Optional: add rounded corners */
   }
   
+  .text-container {
+    max-width: 50%; /* Adjust the width of the text container */
+    margin-left: 20px; /* Add some spacing to the left of the heading */
+  }
+  
+  .why-heading {
+    font-size: 40px; /* Font size for Why Suvidha heading */
+    font-weight: bold;
+    color: #0D47A1; /* Adjust color as per your color scheme */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  
+  .why-content {
+    font-size: 18px; /* Font size for the content below Why Choose Suvidha */
+    color: #333; /* Text color */
+    text-align: left; /* Align the text to the left */
+    line-height: 1.6; /* Adjust line height for better readability */
+  }
+  .bullet-points {
+    font-size: 20px; /* Font size for the bullet points */
+    color: #E57B1E; /* Text color */
+    text-align: left; /* Align the text to the left */
+    margin-top: 20px; /* Add top margin for spacing */
+    padding-left: 20px; /* Add padding for indentation */
+  }
+  
+  .bullet-points li {
+    margin-bottom: 10px; /* Space between bullet points */
+  }
+  .circle {
+    width: 50px; /* Circle diameter */
+    height: 50px; /* Circle diameter */
+    border-radius: 50%; /* Makes the div a circle */
+    position: absolute; /* Positioning to place them as needed */
+  }
+  
+  .circle.top-left {
+    top: 20px;
+    left: 20px;
+    background-color: #FFC107; /* Yellow color */
+  }
+  
+  .circle.top-right {
+    top: 20px;
+    right: 20px;
+    background-color: #8E24AA; /* Purple color */
+  }
+  
+  .circle.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    background-color: #43A047; /* Green color */
+  }
+  
+  .circle.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    background-color: #E53935; /* Red color */
+  }
   /* Responsive Design */
   @media (max-width: 768px) {
     .heading {
       font-size: 20px; /* Adjust font size for smaller screens */
-      margin-top: 15px; /* Adjust top margin for smaller screens */
+      margin-top: 5px; /* Reduced top margin for smaller screens */
       margin-bottom: 15px; /* Adjust bottom margin for smaller screens */
     }
   
@@ -58,7 +119,29 @@
     }
   
     .image-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
       margin-top: 10px; /* Adjust top margin for smaller screens */
+    }
+  
+    .home-image {
+      max-width: 80%; /* Adjust the width for smaller screens */
+      margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+  
+    .text-container {
+      max-width: 100%; /* Make text container full width */
+      margin-left: 0; /* Remove left margin */
+      text-align: center; /* Center the text */
+    }
+  
+    .why-heading {
+      font-size: 24px; /* Adjust font size for smaller screens */
+      margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+  
+    .why-content {
+      font-size: 16px; /* Adjust font size for smaller screens */
     }
   }
   
