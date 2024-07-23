@@ -74,19 +74,52 @@
     margin-bottom: 10px; /* Space between bullet points */
   }
   .success-message {
-    font-size: 40px; /* Larger font size for success message */
+    font-size: 30px; /* Larger font size for success message */
     color: #0D47A1; /* Adjust color as per your color scheme */
     text-align: left; /* Align the text to the left */
     margin-top: 30px; /* Add top margin for spacing */
     margin-right: 660px; /* Add right margin for spacing */
   }
+  .success-subheading {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
 
-.success-image {
-    max-width: 70%; /* Adjust the width of the images */
-    height: auto; /* Maintain aspect ratio */
-    margin-left:200px; /* Add left margin for spacing */
+
+
+  
+  
+.success-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
   }
   
+  .success-message {
+    font-size: 40px;
+    color: #0D47A1;
+    text-align: left;
+    margin-right: 30px;
+    margin-bottom: 250px;
+  }
+  
+  .success-images {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .success-image {
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .success-image-top {
+    margin-right: 20px; /* Add space between the images */
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
