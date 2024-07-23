@@ -21,7 +21,7 @@ const Home = () => {
         </div>
       </div>
       <div className="success-container">
-        <p className="success-message">Your Success in International Education<br />Starts Here</p>
+        <p className="success-message">Your Success in International Education Starts Here</p>
         <p className="success-subheading">Cultivating Dreams, Empowering Futures: Your Trustworthy Partner in Global Education</p>
         <div className="success-images">
           <img src={`${process.env.PUBLIC_URL}/img 2.png`} alt="Success Image 1" className="success-image success-image-top" />

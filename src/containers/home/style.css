@@ -73,19 +73,23 @@
   .bullet-points li {
     margin-bottom: 10px; /* Space between bullet points */
   }
-  .success-message {
-    font-size: 30px; /* Larger font size for success message */
+  
+.success-message {
+    font-size: 70px; /* Larger font size for success message */
     color: #0D47A1; /* Adjust color as per your color scheme */
-    text-align: left; /* Align the text to the left */
+    text-align: center; /* Align the text to the left */
     margin-top: 30px; /* Add top margin for spacing */
     margin-right: 660px; /* Add right margin for spacing */
   }
+  
   .success-subheading {
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 60px;
+    text-align: left; /* Align to the left */
+    margin-top: 10px; /* Add top margin for spacing */
+    margin-bottom: 60px; /* Add bottom margin for spacing */
+    font-size: 35px; /* Increase font size for subheading */
+    color: #E57B1E; /* Adjust color as per your color scheme */
+    margin-left: 0px; /* Align with the success message */
   }
-
 
 
   
