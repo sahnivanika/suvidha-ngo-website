@@ -53,7 +53,8 @@
     font-weight: bold;
     color: #0D47A1; /* Adjust color as per your color scheme */
     margin-bottom: 20px; /* Add bottom margin for spacing */
-  }
+    text-align: center;  
+}
   
   .why-content {
     font-size: 18px; /* Font size for the content below Why Choose Suvidha */
@@ -65,43 +66,28 @@
     font-size: 20px; /* Font size for the bullet points */
     color: #E57B1E; /* Text color */
     text-align: left; /* Align the text to the left */
-    margin-top: 20px; /* Add top margin for spacing */
+    margin-top: 30px; /* Add top margin for spacing */
     padding-left: 20px; /* Add padding for indentation */
   }
   
   .bullet-points li {
     margin-bottom: 10px; /* Space between bullet points */
   }
-  .circle {
-    width: 50px; /* Circle diameter */
-    height: 50px; /* Circle diameter */
-    border-radius: 50%; /* Makes the div a circle */
-    position: absolute; /* Positioning to place them as needed */
+  .success-message {
+    font-size: 40px; /* Larger font size for success message */
+    color: #0D47A1; /* Adjust color as per your color scheme */
+    text-align: left; /* Align the text to the left */
+    margin-top: 30px; /* Add top margin for spacing */
+    margin-right: 660px; /* Add right margin for spacing */
+  }
+
+.success-image {
+    max-width: 70%; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-left:200px; /* Add left margin for spacing */
   }
   
-  .circle.top-left {
-    top: 20px;
-    left: 20px;
-    background-color: #FFC107; /* Yellow color */
-  }
   
-  .circle.top-right {
-    top: 20px;
-    right: 20px;
-    background-color: #8E24AA; /* Purple color */
-  }
-  
-  .circle.bottom-left {
-    bottom: 20px;
-    left: 20px;
-    background-color: #43A047; /* Green color */
-  }
-  
-  .circle.bottom-right {
-    bottom: 20px;
-    right: 20px;
-    background-color: #E53935; /* Red color */
-  }
   /* Responsive Design */
   @media (max-width: 768px) {
     .heading {

@@ -4,10 +4,6 @@ import './style.css';
 const Home = () => {
   return (
     <div className="home-container">
-     <div className="circle top-left"></div>
-      <div className="circle top-right"></div>
-      <div className="circle bottom-left"></div>
-      <div className="circle bottom-right"></div>
       <h2 className="heading">Launch Your Overseas Education Journey: Get Started with Free Consultation</h2>
       <p className="subheading">Dream, Explore, Achieve: Your Journey to Global Education Begins with Us</p>
       <div className="image-container">
@@ -23,6 +19,11 @@ const Home = () => {
             <li>Free Consultation Services</li>
           </ul>
         </div>
+      </div>
+      <div className="success-container">
+        <p className="success-message">Your Success in International Education<br />Starts Here</p>
+        <img src={`${process.env.PUBLIC_URL}/img 2.png`} alt="Success Image 1" className="success-image" />
+        <img src={`${process.env.PUBLIC_URL}/img 3.png`} alt="Success Image 2" className="success-image" />
       </div>
     </div>
   );
