@@ -5,12 +5,15 @@ import './style.css'; // Make sure to add styles in this file or inline
 const Navbar = () => {
   return (
     <nav className="navbar">
+     <div className="logo-container">
+        <img src={`${process.env.PUBLIC_URL}/img 4.png`} alt="Company Logo" className="logo" />
+      </div>
       <ul className="navbar-list">
         <li className="navbar-item">
           <Link to="/" className="navbar-link">Home</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/about" className="navbar-link">About</Link>
+          <Link to="/about" className="navbar-link">Services</Link>
         </li>
         <li className="navbar-item">
           <Link to="/contact" className="navbar-link">Contact</Link>

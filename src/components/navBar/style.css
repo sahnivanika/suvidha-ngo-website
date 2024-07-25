@@ -1,44 +1,60 @@
-/* Navbar.css */
-/* Navbar.css */
 .navbar {
-    background-color: #42A5F5; /* Medium Blue for the background */
-    padding: 25px 25px; /* Padding around the navbar */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  background-color: #42A5F5; /* Medium Blue for the background */
+  padding: 15px 25px; /* Padding around the navbar */
+}
+
+.logo-container {
+  flex-shrink: 0; /* Prevent logo from shrinking */
+  margin-right: auto; /* Pushes the navbar items to the right */
+}
+
+.logo {
+  height: 60px; /* Adjust the logo size as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use Flexbox to arrange items horizontally */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.navbar-item {
+  margin: 0 20px; /* Margins on the left and right side of each item */
+  margin-top: 0px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white; /* White text color */
+  font-weight: bold;
+  font-size: 18px; /* Slightly larger font size for better readability */
+  padding: 10px 15px; /* Padding around the link for better click area */
+  border-radius: 5px; /* Rounded corners for the link */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-link:hover {
+  background-color: #1E88E5; /* Dark Blue for hover effect */
+  color: #FFFFFF; /* White text color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
   }
-  
+
   .navbar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use Flexbox to arrange items horizontally */
-    justify-content: center; /* Center the items horizontally */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
   }
-  
+
   .navbar-item {
-    margin: 0 20px; /* Margins on the left and right side of each item */
-    margin-top: 0px;
+    margin: 10px 0; /* Adjust margins for vertical layout */
   }
-  
-  .navbar-link {
-    text-decoration: none;
-    color: white; /* White text color */
-    font-weight: bold;
-    font-size: 18px; /* Slightly larger font size for better readability */
-    padding: 10px 15px; /* Padding around the link for better click area */
-    border-radius: 5px; /* Rounded corners for the link */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-  }
-  
-  .navbar-link:hover {
-    background-color: #1E88E5; /* Dark Blue for hover effect */
-    color: #FFFFFF; /* White text color on hover */
-  }
-  @media (max-width: 768px) {
-    .navbar-list {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center; /* Center items horizontally */
-    }
-  
-    .navbar-item {
-      margin: 10px 0; /* Adjust margins for vertical layout */
-    }
-  }
+}

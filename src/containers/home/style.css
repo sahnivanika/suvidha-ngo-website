@@ -1,102 +1,78 @@
-/* Home.css */
-/* Home.css */
+/* Base Styles */
 .home-container {
-    padding: 30px; /* Adjust padding as needed */
-    display: flex; /* Use Flexbox to arrange items */
-    flex-direction: column; /* Stack items vertically by default */
-    align-items: center; /* Center items horizontally */
+    padding: 30px; /* Default padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .heading {
-    font-size: 50px; /* Font size for h2 heading */
+    font-size: 50px;
     font-weight: bold;
-    margin-left: 40px; /* Corrected margin-left with unit */
-    margin-right: 15px; /* Corrected margin-right with unit */
-    margin-top: 0px; /* Reduced margin-top to move closer to navbar */
-    margin-bottom: 20px; /* Bottom margin for spacing below the heading */
-    text-align: center; /* Center the text */
-    color: #1E88E5; /* Dark Blue color for the heading text */
+    margin: 0 15px 20px 15px; /* Margins for heading */
+    text-align: center;
+    color: #1E88E5;
   }
   
   .subheading {
-    font-size: 30px; /* Smaller font size for the subheading */
-    font-weight: normal; /* Normal weight for the subheading text */
-    margin-left: 0; /* No extra margin on the left */
-    margin-right: 0; /* No extra margin on the right */
-    margin-top: 0; /* No extra margin above the subheading */
-    margin-bottom: 20px; /* Margin below the subheading for spacing */
-    text-align: center; /* Center the text */
-    color: #E57B1E; /* Dark Blue color for the subheading text */
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 15px 20px 15px;
+    text-align: center;
+    color:rgb(254, 103, 184);
   }
   
   .image-container {
-    width: 90%; /* Ensure the image container takes full width */
-    display: flex; /* Use Flexbox to arrange items */
-    align-items: flex-start; /* Align items to the start */
-    justify-content: space-between; /* Space items evenly */
-    margin-top: 0px; /* Space between text and image */
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 0;
   }
   
   .home-image {
-    max-width: 40%; /* Adjust the width to ensure it fits on the screen */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0px; /* Optional: add rounded corners */
+    max-width: 40%;
+    height: auto;
+    border-radius: 0;
+    border:4px dashed var(--blue--dark--color);
   }
   
   .text-container {
-    max-width: 50%; /* Adjust the width of the text container */
-    margin-left: 20px; /* Add some spacing to the left of the heading */
+    max-width: 50%;
+    margin-left: 20px;
   }
   
   .why-heading {
-    font-size: 40px; /* Font size for Why Suvidha heading */
+    font-size: 40px;
     font-weight: bold;
-    color: #0D47A1; /* Adjust color as per your color scheme */
-    margin-bottom: 20px; /* Add bottom margin for spacing */
-    text-align: center;  
-}
+    color: #0D47A1;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   
   .why-content {
-    font-size: 18px; /* Font size for the content below Why Choose Suvidha */
-    color: #333; /* Text color */
-    text-align: left; /* Align the text to the left */
-    line-height: 1.6; /* Adjust line height for better readability */
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
   }
+  
   .bullet-points {
-    font-size: 20px; /* Font size for the bullet points */
-    color: #E57B1E; /* Text color */
-    text-align: left; /* Align the text to the left */
-    margin-top: 30px; /* Add top margin for spacing */
-    padding-left: 20px; /* Add padding for indentation */
+    font-size: 20px;
+    color:rgb(255, 53, 161);
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 20px;
   }
   
   .bullet-points li {
-    margin-bottom: 10px; /* Space between bullet points */
+    margin-bottom: 10px;
   }
   
-.success-message {
-    font-size: 70px; /* Larger font size for success message */
-    color: #0D47A1; /* Adjust color as per your color scheme */
-    text-align: center; /* Align the text to the left */
-    margin-top: 30px; /* Add top margin for spacing */
-    margin-right: 660px; /* Add right margin for spacing */
-  }
-  
-  .success-subheading {
-    text-align: left; /* Align to the left */
-    margin-top: 10px; /* Add top margin for spacing */
-    margin-bottom: 60px; /* Add bottom margin for spacing */
-    font-size: 35px; /* Increase font size for subheading */
-    color: #E57B1E; /* Adjust color as per your color scheme */
-    margin-left: 0px; /* Align with the success message */
-  }
-
-
-  
-  
-.success-container {
+  .success-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 30px;
   }
   
@@ -104,67 +80,209 @@
     font-size: 40px;
     color: #0D47A1;
     text-align: left;
-    margin-right: 30px;
-    margin-bottom: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .success-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .success-paragraph {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
+    max-width: 50%;
   }
   
   .success-images {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    max-width: 50%;
+    border: 4px dashed var(--blue--dark--color);
   }
   
   .success-image {
-    max-width: 50%;
+    max-width: 250px;
     height: auto;
     margin: 10px;
   }
   
   .success-image-top {
-    margin-right: 20px; /* Add space between the images */
+    margin-bottom: 10px;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
     .heading {
-      font-size: 20px; /* Adjust font size for smaller screens */
-      margin-top: 5px; /* Reduced top margin for smaller screens */
-      margin-bottom: 15px; /* Adjust bottom margin for smaller screens */
+      font-size: 40px;
+      margin: 0 10px 15px 10px;
     }
   
     .subheading {
-      font-size: 16px; /* Adjust font size for smaller screens */
-    }
-  
-    .home-container {
-      padding: 15px; /* Adjust padding for smaller screens */
+      font-size: 24px;
+      margin: 0 10px 15px 10px;
     }
   
     .image-container {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center; /* Center items horizontally */
-      margin-top: 10px; /* Adjust top margin for smaller screens */
+      flex-direction: column;
+      align-items: center;
     }
   
     .home-image {
-      max-width: 80%; /* Adjust the width for smaller screens */
-      margin-bottom: 20px; /* Add bottom margin for spacing */
+      max-width: 80%;
+      margin-bottom: 20px;
     }
   
     .text-container {
-      max-width: 100%; /* Make text container full width */
-      margin-left: 0; /* Remove left margin */
-      text-align: center; /* Center the text */
+      max-width: 100%;
+      margin-left: 0;
+      text-align: center;
     }
   
     .why-heading {
-      font-size: 24px; /* Adjust font size for smaller screens */
-      margin-bottom: 10px; /* Add bottom margin for spacing */
+      font-size: 30px;
+      margin-bottom: 15px;
     }
   
     .why-content {
-      font-size: 16px; /* Adjust font size for smaller screens */
+      font-size: 16px;
+    }
+  
+    .bullet-points {
+      font-size: 18px;
+    }
+  
+    .success-paragraph {
+      font-size: 16px;
+      max-width: 100%;
+    }
+  
+    .success-images {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color:rgb(255, 53, 161);; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: -200px;
+    text-decoration: none; /* Space above the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1565C0; /* Darker shade on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 30px;
+      margin: 0 10px 10px 10px;
+    }
+  
+    .subheading {
+      font-size: 20px;
+      margin: 0 10px 10px 10px;
+    }
+  
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-image {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .text-container {
+      max-width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .why-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .why-content {
+      font-size: 14px;
+    }
+  
+    .success-paragraph {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  
+    .success-images {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .success-image {
+      max-width: 200px;
+      margin: 5px;
     }
   }
   
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 24px;
+    }
+  
+    .subheading {
+      font-size: 18px;
+    }
+  
+    .why-heading {
+      font-size: 20px;
+    }
+  
+    .why-content {
+      font-size: 12px;
+    }
+  
+    .success-paragraph {
+      font-size: 12px;
+    }
+  
+    .success-image {
+      max-width: 150px;
+      margin: 3px;
+    }
+  }
+  @media (max-width: 768px) {
+    .cta-button {
+      padding: 12px 20px; /* Adjust padding for smaller screens */
+      font-size: 16px; /* Adjust font size for smaller screens */
+      margin-top: 8px; /* Adjust space above the button for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cta-button {
+      padding: 10px 15px; /* Further reduce padding for very small screens */
+      font-size: 14px; /* Further reduce font size for very small screens */
+      margin-top: 5px; /* Further reduce space above the button */
+    }
+  }

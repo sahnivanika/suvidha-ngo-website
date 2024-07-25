@@ -1,0 +1,65 @@
+/* Services.css */
+/* Services.css */
+.services-container {
+    padding: 30px;
+    background-color: var(--blue--backgroud--color); /* Light blue background color */
+  }
+  
+  .services-heading {
+    font-size: 50px; /* Large font size for the heading */
+    font-weight: bold;
+    color: var(--blue--dark--color); /* Dark blue color for the heading text */
+    margin-bottom: 20px; /* Margin below the heading for spacing */
+    margin-top: -10px;
+    text-align: center; /* Center the heading text */
+  }
+  
+  .services-subheading {
+    font-size: 24px; /* Smaller font size for the subheading */
+    font-weight: normal;
+    color:rgb(253, 100, 181); /* Medium blue color for the subheading text */
+    margin-bottom: 20px; /* Margin below the subheading for spacing */
+    text-align: center; /* Center the subheading text */
+  }
+  
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 40px; /* Space between the cards */
+  }
+  
+  .service-card {
+    background-color: #fff; /* White background for the cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    width: 350px; /* Fixed width for the cards */
+    padding: 25px; /* Padding inside the cards */
+    text-align: center; /* Center the text inside the cards */
+    border:4px solid var(--blue--dark--color)
+}
+  
+  .service-icon img {
+    width: 50px; /* Width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the icon */
+  }
+  
+  .service-title {
+    font-size: 20px; /* Font size for the title */
+    font-weight: bold;
+    color: var(--blue--dark--color); /* Dark blue color for the title */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .service-description {
+    font-size: 18px; /* Font size for the description */
+    color:rgb(253, 100, 181); /* Grey color for the description text */
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  

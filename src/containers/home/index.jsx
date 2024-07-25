@@ -21,16 +21,24 @@ const Home = () => {
         </div>
       </div>
       <div className="success-container">
-        <p className="success-message">Your Success in International Education Starts Here</p>
-        <p className="success-subheading">Cultivating Dreams, Empowering Futures: Your Trustworthy Partner in Global Education</p>
-        <div className="success-images">
-          <img src={`${process.env.PUBLIC_URL}/img 2.png`} alt="Success Image 1" className="success-image success-image-top" />
-          <img src={`${process.env.PUBLIC_URL}/img 3.png`} alt="Success Image 2" className="success-image success-image-bottom" />
+        <h3 className="success-message">Your Success in International Education Starts Here</h3>
+        <div className="success-content">
+          <p className="success-paragraph">
+            Cultivating Dreams, Empowering Futures: Your Trustworthy Partner in Global Education. Get guided support for a seamless application process. We will guide you through deadlines, program options, standardized testing, and visa requirements. Receive application essay and interview prep tips to stand out for the competitive Fall intake.
+          </p>
+          <div className="success-images">
+            <img src={`${process.env.PUBLIC_URL}/img 2.png`} alt="Success Image 1" className="success-image success-image-top" />
+            <img src={`${process.env.PUBLIC_URL}/img 3.png`} alt="Success Image 2" className="success-image success-image-bottom" />
+          </div>
         </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9Mz4HpahdtjFaEmR20JC1D-pRELSUXGjrr2IsxlpUZtYYMg/viewform" target="_blank" rel="noopener noreferrer" className="cta-button">
+        Start Your Journey for Free
+        </a>
       </div>
-      </div>
+    </div>
   );
 };
 
 export default Home;
+
 
