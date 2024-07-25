@@ -1,92 +1,118 @@
 /* Exams.css */
 .exams-section {
     padding: 20px;
-    background-color: #f0f0f0; /* Light grey background */
-  }
-  
-  .exams-heading {
+    background-color: #E3F2FD; /* Light blue background */
+}
+
+.exams-heading {
     text-align: center;
     color: #126ef9e9; /* Dark blue color */
-    font-size: 50px;  
-}
-  
-  .exams-subheading {
-    text-align: center;
-    color: #42A5F5; /* Medium blue color */
+    font-size: 40px; /* Reduced font size for better responsiveness */
     margin-bottom: 20px;
-    font-size: 30px;
-  }
-  
-  .exams-container {
+}
+
+.exams-subheading {
+    text-align: center;
+    color: rgb(254, 103, 184); /* Pink color */
+    margin-bottom: 40px;
+    font-size: 24px; /* Reduced font size for better responsiveness */
+}
+
+.exams-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-  }
-  
-  .exam-box {
-    background-color: #333; /* Dark background */
-    color: #fff;
+    gap: 60px;
+}
+
+.exam-box {
+    background-color: #fff; /* Dark background */
+    color:#025ca6;
     border-radius: 10px;
-    padding: 20px;
+    padding: 50px;
     width: calc(33.333% - 40px); /* Three boxes per row with space */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .exam-content {
+    transition: transform 0.3s;
+    border: 4px solid var(--blue--medium--color);
+}
+
+.exam-box:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.exam-content {
     margin-bottom: 20px;
-  }
-  
-  .exam-title {
+}
+
+.exam-title {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .exam-description {
+    color:#333 ;
+}
+
+.exam-description {
     font-size: 16px;
-  }
-  
-  .exam-buttons {
+}
+
+.exam-buttons {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .btn {
-    background-color:#42A5F5; /* Button background color */
+    gap: 10px; /* Add gap between buttons */
+}
+
+.btn {
+    background-color: rgb(254, 103, 184);; /* Button background color */
     color: #fff;
     border: none;
     font-size: 16px;
-    padding: 20px 20px;
+    padding: 10px 20px; /* Adjusted padding */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #009688; /* Darker shade on hover */
-  }
-  
-  .know-more {
-    background-color: #00C4B3; /* Custom button color */
-  }
-  
-  .enquire-now {
-    background-color: #009688; /* Custom button color */
-  }
-  
-  .book-seat {
-    background-color: #00796B; /* Custom button color */
-  }
-  
-  @media (max-width: 768px) {
+    flex: 1; /* Ensure buttons take equal space */
+    text-align: center; /* Center text in buttons */
+}
+
+.btn:hover {
+    background-color: rgb(254, 103, 184); /* Darker shade on hover */
+}
+
+.know-more {
+    background-color: rgb(254, 103, 184);; /* Custom button color */
+}
+
+.enquire-now {
+    background-color:rgb(254, 103, 184);; /* Custom button color */
+}
+
+.book-seat {
+    background-color: rgb(254, 103, 184);; /* Custom button color */
+}
+
+@media (max-width: 1024px) {
     .exam-box {
-      width: calc(50% - 20px); /* Two boxes per row on smaller screens */
+        width: calc(50% - 30px); /* Two boxes per row on medium screens */
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 768px) {
     .exam-box {
-      width: 100%; /* One box per row on smallest screens */
+        width: calc(50% - 20px); /* Two boxes per row on smaller screens */
     }
-  }
-  
+}
+
+@media (max-width: 480px) {
+    .exam-box {
+        width: 100%; /* One box per row on smallest screens */
+    }
+
+    .exam-buttons {
+        flex-direction: column;
+        gap: 10px; /* Add gap between buttons in column layout */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+}

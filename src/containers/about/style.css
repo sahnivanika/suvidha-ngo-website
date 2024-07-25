@@ -9,8 +9,7 @@
     font-size: 50px; /* Large font size for the heading */
     font-weight: bold;
     color: var(--blue--dark--color); /* Dark blue color for the heading text */
-    margin-bottom: 20px; /* Margin below the heading for spacing */
-    margin-top: -10px;
+    margin-bottom: 25px; /* Margin below the heading for spacing */
     text-align: center; /* Center the heading text */
   }
   
