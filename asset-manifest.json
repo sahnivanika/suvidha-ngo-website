@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/suvidha-ngo-website/static/css/main.7f1a305c.css",
+    "main.js": "/suvidha-ngo-website/static/js/main.8b5a2f99.js",
+    "index.html": "/suvidha-ngo-website/index.html",
+    "main.7f1a305c.css.map": "/suvidha-ngo-website/static/css/main.7f1a305c.css.map",
+    "main.8b5a2f99.js.map": "/suvidha-ngo-website/static/js/main.8b5a2f99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f1a305c.css",
+    "static/js/main.8b5a2f99.js"
+  ]
+}
